@@ -1,0 +1,84 @@
+/* This is the flex stylesheet  */
+/*
+    
+    display: flex ; in this css declaration display is the property while flex is the value 
+    the property is in the left side of the colon(:) while value is on the right
+
+ */
+/* For better understanding try altering the different properties and values  in different classes */
+/* 
+    Anything inside  forward slashes and asterix (/*) is a comment not a code. 
+    Removing any of the symbols may cause an error so hehe try it - you won't die
+ */
+body {
+    background-color: #BFECFF;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.heading {
+    text-align: center;
+    font-family: sans-serif;
+    color: #001F3F;
+    background-color: #C68FE6;
+    /* border: 20px; */
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.flex-container {
+    background-color: #E8B86D;
+
+    /* The display: flex property enables the flexbox property */
+    display: flex;
+
+
+
+    /* Flex-direction property determines the direction in which flex
+    items will appear    
+    The main values are row and column others are row-reverse and column reverse
+    */
+    flex-direction: row;
+
+
+
+    /* Flex-wrap CSS property sets whether flex items are 
+    forced onto one line or can wrap onto multiple lines 
+    I want you to play with 
+    1.the size of your browser window or 
+    2.Width property in this selector
+    */
+    /* width: 100%; use percentages or pixels(px)*/
+    flex-wrap: wrap;
+    /* 3. Also play with the different flex-wrap values i.e wrap,nowrap,wrap-reverse*/
+
+
+
+    /* justify-content defines how the browser  distributes the space between and 
+    flex-items along the main axis(horizontal axis) of a flex container 
+    */
+    justify-content: center;
+    /* Other values you can use apart from center is space-evenly, space-around, space-between
+    for more visual results disable the margin property in the flex items selector below
+    */
+
+
+
+    /* align-items control the alignment of flex items on the (cross axis) */
+    align-items: center;
+    /* Other values to play with apart from center are end,start and stretch 
+    for maximum visual results change the flex-direction property to column
+    */
+
+
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.flex-item {
+    padding: 50px;
+    margin: 10px;
+    border-radius: 20%;
+    background-color: #D1D8C5;
+    border: #FCDE70 solid 5px;
+}
